@@ -1,4 +1,10 @@
 import type { Data } from "./dataType";
+import iconWork from "/src/assets/images/icon-work.svg";
+import iconPlay from "/src/assets/images/icon-play.svg";
+import iconStudy from "/src/assets/images/icon-study.svg";
+import iconExercise from "/src/assets/images/icon-exercise.svg";
+import iconSocial from "/src/assets/images/icon-social.svg";
+import iconSelfCare from "/src/assets/images/icon-self-care.svg";
 
 export default function StatCard({
 	data,
@@ -8,6 +14,7 @@ export default function StatCard({
 	timeframe: string;
 }) {
 	const bgColor = getBgColor(data.title);
+	const icon = getIcon(data.title);
 	function getBgColor(title: string): string {
 		switch (title) {
 			case "Work":
@@ -26,12 +33,29 @@ export default function StatCard({
 				return "";
 		}
 	}
-
+	function getIcon(title: string): string {
+		switch (title) {
+			case "Work":
+				return iconWork;
+			case "Play":
+				return iconPlay;
+			case "Study":
+				return iconStudy;
+			case "Exercise":
+				return iconExercise;
+			case "Social":
+				return iconSocial;
+			case "Self Care":
+				return iconSelfCare;
+			default:
+				return "";
+		}
+	}
 	return (
 		<section className="relative overflow-hidden rounded-2xl">
 			<div className={`${bgColor} absolute h-1/2 w-full overflow-hidden`}>
 				<img
-					src={`/src/assets/images/icon-${data.title.toLowerCase().replace(" ", "-")}.svg`}
+					src={icon}
 					alt={`${data.title} Icon`}
 					className="absolute -top-[10.91px] left-[231.58px] h-[78px] w-[78px] xl:top-0 xl:left-[157px]"
 				/>
