@@ -1,5 +1,6 @@
 {
 	"name": "time-tracking-dashboard",
+	"homepage": "https//redjackfred.github.io/time-tracking-dashboard",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",

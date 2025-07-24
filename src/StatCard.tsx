@@ -31,7 +31,7 @@ export default function StatCard({
 		<section className="relative overflow-hidden rounded-2xl">
 			<div className={`${bgColor} absolute h-1/2 w-full overflow-hidden`}>
 				<img
-					src={`time-tracking-dashboard/src/assets/images/icon-${data.title.toLowerCase().replace(" ", "-")}.svg`}
+					src={`/src/assets/images/icon-${data.title.toLowerCase().replace(" ", "-")}.svg`}
 					alt={`${data.title} Icon`}
 					className="absolute -top-[10.91px] left-[231.58px] h-[78px] w-[78px] xl:top-0 xl:left-[157px]"
 				/>
