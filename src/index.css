@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-navy-200: #bbc0ff;
+	--color-navy-800: #33397a;
+	--color-navy-900: #1c204b;
+	--color-navy-950: #0e1323;
+	--color-orange: #ff8b64;
+	--color-purple-500: #7078c9;
+	--color-purple-600: #5747ea;
+	--color-purple-700: #7335d2;
+	--color-blue-300: #55c2e6;
+	--color-pink-400: #ff5e7d;
+	--color-green-400: #4bcf82;
+	--color-yellow-300: #f1c75b;
+	--color-grey-200: #d8d8d8;
+}
+
+@layer components {
+	.text-preset-1 {
+		font-family: "Rubik", sans-serif;
+		font-weight: 300;
+		font-size: 56px;
+		line-height: 66px;
+		letter-spacing: 0;
+	}
+	.text-preset-2 {
+		font-family: "Rubik", sans-serif;
+		font-weight: 300;
+		font-size: 40px;
+		line-height: 47px;
+		letter-spacing: 0;
+	}
+	.text-preset-3 {
+		font-family: "Rubik", sans-serif;
+		font-weight: 300;
+		font-size: 32px;
+		line-height: 38px;
+		letter-spacing: 0;
+		@apply md:text-[56px] md:leading-[66px];
+	}
+	.text-preset-4 {
+		font-family: "Rubik", sans-serif;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 24px;
+		letter-spacing: 0;
+		@apply leading-[47px] xl:text-[40px];
+	}
+	.text-preset-5-medium {
+		font-family: "Rubik", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		letter-spacing: 0;
+	}
+	.text-preset-5-regular {
+		font-family: "Rubik", sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		letter-spacing: 0;
+	}
+	.text-preset-6 {
+		font-family: "Rubik", sans-serif;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0;
+	}
+}
