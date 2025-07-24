@@ -57,13 +57,17 @@ export default function StatCard({
 				<img
 					src={icon}
 					alt={`${data.title} Icon`}
-					className="absolute -top-[10.91px] left-[231.58px] h-[78px] w-[78px] xl:top-0 xl:left-[157px]"
+					className="absolute -top-[10.91px] left-[231.58px] h-[78px] w-[78px] xl:-top-[10px] xl:left-[160px]"
 				/>
 			</div>
 			<div className="bg-navy-900 hover:bg-navy-800 relative mt-[38px] flex h-[122px] flex-col gap-2 rounded-2xl p-6 text-white md:h-[180px] md:gap-4 xl:mt-[45px] xl:h-[199px] xl:gap-6 xl:px-[32.5px] xl:py-[31px]">
 				<header className="flex items-center justify-between">
 					<h2 className="text-preset-5-medium text-white">{data.title}</h2>
-					<p className="text-navy-200 text-preset-5-medium">...</p>
+					<span className="flex gap-[3px]">
+						<div className="bg-navy-200 h-[5px] w-[5px] rounded-full"></div>
+						<div className="bg-navy-200 h-[5px] w-[5px] rounded-full"></div>
+						<div className="bg-navy-200 h-[5px] w-[5px] rounded-full"></div>
+					</span>
 				</header>
 				<main className="flex items-center justify-between gap-2 md:flex-col md:items-start">
 					<h1 className="text-preset-3 text-white">
