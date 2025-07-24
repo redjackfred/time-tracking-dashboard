@@ -60,7 +60,7 @@ export default function StatCard({
 					className="absolute -top-[10.91px] left-[231.58px] h-[78px] w-[78px] xl:top-0 xl:left-[157px]"
 				/>
 			</div>
-			<div className="bg-navy-900 hover:bg-navy-800 relative mt-[38px] flex h-[122px] flex-col gap-2 rounded-2xl p-6 text-white md:h-[180px] md:gap-4 xl:mt-[45px] xl:h-[199px] xl:px-[32.5px] xl:py-[31px]">
+			<div className="bg-navy-900 hover:bg-navy-800 relative mt-[38px] flex h-[122px] flex-col gap-2 rounded-2xl p-6 text-white md:h-[180px] md:gap-4 xl:mt-[45px] xl:h-[199px] xl:gap-6 xl:px-[32.5px] xl:py-[31px]">
 				<header className="flex items-center justify-between">
 					<h2 className="text-preset-5-medium text-white">{data.title}</h2>
 					<p className="text-navy-200 text-preset-5-medium">...</p>

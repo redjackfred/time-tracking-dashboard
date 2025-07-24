@@ -11,11 +11,11 @@ export default function Header({
 
 	return (
 		<header className="bg-navy-900 h-full w-full rounded-2xl">
-			<section className="flex items-center justify-center gap-6 rounded-2xl bg-purple-600 p-8 md:justify-normal xl:h-[354px] xl:flex-col xl:items-start">
+			<section className="flex items-center justify-center gap-6 rounded-2xl bg-purple-600 p-8 md:justify-normal xl:h-[354px] xl:flex-col xl:items-start xl:gap-10">
 				<img
 					src={avatar}
 					alt="Avatar"
-					className="h-16 w-16 rounded-full border-2 border-white xl:h-[78px] xl:w-[78px]"
+					className="h-16 w-16 rounded-full border-2 border-white xl:h-[84px] xl:w-[84px]"
 				/>
 				<div className="aria-hidden">
 					<h2 className="text-preset-6 text-navy-200">Report for</h2>
